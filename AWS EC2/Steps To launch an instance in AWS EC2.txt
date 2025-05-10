@@ -1,0 +1,38 @@
+1.	Sign in to the AWS Management Console: 
+Go to the AWS homepage and sign in using your credentials.
+
+2.	Navigate to EC2: 
+Once logged in, go to the EC2 Dashboard. You can find this under the "Compute" section of the AWS services.
+
+3.	Click on "Launch Instance: 
+On the EC2 Dashboard, click the "Launch Instance" button to begin the process of launching a new instance.
+
+4.	Add Name & Tags (Optional): 
+You can add tags to your instance for better organization and management. Tags are key-value pairs that help you identify your instances.
+
+5.	Choose an Amazon Machine Image (AMI):. 
+This is essentially the operating system for your instance. You can select from a range of options provided by AWS or use your own custom AMI.
+
+6.	Choose an Instance Type: 
+Each instance type has different combinations of CPU, memory, storage, and networking capacity. Choose the one that best fits your needs.(t2/t3)
+
+7.	Configure Instance: 
+Here, you can configure additional settings such as the number of instances you want to launch, network settings, Subnet, Auto-assign Public IP, IAM role, monitoring, etc. You can also add storage volumes (8gb Linux and prod up to 30gb) at this stage if needed.
+
+8.	Select Key Pair: 
+You will need to create or select an existing key pair. This is necessary for securely accessing your instance via SSH if you are using a Linux-based instance or via RDP for Windows instances.
+
+9.	Configure Security Group: 
+Security groups act as a virtual firewall for your instance to control inbound and outbound traffic. You can create a new security group or select an existing one. Make sure to configure the rules according to your requirements.
+ 
+10.	Review and Launch: 
+Review all the configurations you have made so far and click "Launch Instances" if everything looks good. Now AWS will now initialize your instances.
+
+11.	Accessing Your Instance: 
+Once your instance is launched, you can access it using SSH (for Linux instances) or RDP (for Windows instances) using the public IP address or DNS name assigned to your instance.
+Eg., Linux/macOS: Use SSH with the downloaded .pem file or putty(.ppk)
+Eg., Windows: Use PuTTY or AWS Session Manager.
+
+12: Manage Your Instance
+Start, stop, terminate, or modify your instance as needed.
+Monitor performance using CloudWatch.
